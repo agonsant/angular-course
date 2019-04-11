@@ -1,0 +1,9 @@
+<div id="repo_results" class="search-results-container">
+  <ul class="search-results-list">
+    <li *ngFor="let item of resultList" class="search-results-item">
+      <img width="200" height="200" class="search-result-img" src="{{item.owner.avatar_url}}"/>
+      <h3 class="search-result-title">{{item.name}}</h3>
+      <p class="search-result-description" >{{item.description}}</p>
+    </li>
+  </ul>
+</div>

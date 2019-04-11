@@ -1,0 +1,26 @@
+.search-results-container .search-results-list{
+    list-style-type: none;
+  }
+  
+  .search-results-container .search-results-list .search-results-item{
+    padding: 10px;
+    overflow: auto;
+  }
+  
+  .search-results-container .search-results-list .search-results-item:hover{
+    background: #eee;
+    cursor: pointer;
+  }
+  
+  .search-results-container .search-results-list .search-results-item .search-result-img{
+    float: left;
+    margin: 0 15px 0 0;
+  }
+  
+  .search-results-container .search-results-list .search-results-item .search-result-title{
+    font-size: 30px
+  }
+  
+  .search-results-container .search-results-list .search-results-item .search-result-description{
+    font-size: 18px
+  }

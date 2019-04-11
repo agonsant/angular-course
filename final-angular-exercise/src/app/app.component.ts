@@ -1,5 +1,4 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,18 +7,10 @@ import { HttpClient } from '@angular/common/http';
 })
 export class AppComponent {
 
-  @ViewChild('searchInput') searchInput: ElementRef;
-  resultList: Array<any>;
 
-  constructor(private http: HttpClient) {
 
-  }
+  constructor() {
 
-  searchGithub() {
-    this.http.get(`https://api.github.com/search/repositories?q=${this.searchInput.nativeElement.value}`)
-    .subscribe((res: any) => {
-      this.resultList = res.items;
-    });
   }
 
 }

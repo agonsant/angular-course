@@ -1,16 +1,40 @@
 <header class="header">
   <p>Github Search Engine</p>
 </header>
-<div id="search_form" class="search-container">
-  <input #searchInput id="search_input" class="search-input" type="text" name="search" placeholder="Search something..." />
-  <button id="search_button" class="search-button" (click)="searchGithub()" type="submit"><i class="fa fa-search"></i></button>
-</div>
-<div id="repo_results" class="search-results-container">
-  <ul class="search-results-list">
-    <li *ngFor="let item of resultList" class="search-results-item">
-      <img width="200" height="200" class="search-result-img" src="{{item.owner.avatar_url}}"/>
-      <h3 class="search-result-title">{{item.name}}</h3>
-      <p class="search-result-description" >{{item.description}}</p>
-    </li>
-  </ul>
-</div>
+<router-outlet></router-outlet>
+<!--  PAGE RESULT
+<div class="repo-container">
+  <div class="repo-profile-container">
+    <img class="repo-profile-item repo-profile-img" src="https://avatars3.githubusercontent.com/u/698437?v=4" />
+    <div class="repo-profile-item repo-summary-container">
+      <h2 class="repo-summary-title">JavaScript</h2>
+      <div class="repo-summary-info">
+        <div class="repo-summary-info-item">
+          <span>144</span>
+          <span><i>Open Issues</i></span>
+        </div>
+        <div class="repo-summary-info-item">
+          <span>144</span>
+          <span><i>Forks</i></span>
+        </div>
+        <div class="repo-summary-info-item">
+          <span>144</span>
+          <span><i>Watchers</i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="repo-branches-container">
+    <table class="repo-branches-table">
+      <tr>
+        <th>Branch Name</th>
+      </tr>
+      <tr class="table-row">
+        <td>master</td>
+      </tr>
+      <tr class="table-row">
+        <td>gh-pages</td>
+      </tr>
+    </table>
+  </div>
+</div> -->
