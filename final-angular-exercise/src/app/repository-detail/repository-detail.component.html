@@ -1,0 +1,32 @@
+<div class="repo-container">
+  <div class="repo-profile-container">
+    <img class="repo-profile-item repo-profile-img" src="{{selectedItem.owner.avatar_url}}" />
+    <div class="repo-profile-item repo-summary-container">
+      <h2 class="repo-summary-title">{{selectedItem.name}}</h2>
+      <div class="repo-summary-info">
+        <div class="repo-summary-info-item">
+          <span>{{selectedItem.open_issues}}</span>
+          <span><i>Open Issues</i></span>
+        </div>
+        <div class="repo-summary-info-item">
+          <span>{{selectedItem.forks}}</span>
+          <span><i>Forks</i></span>
+        </div>
+        <div class="repo-summary-info-item">
+          <span>{{selectedItem.watchers}}</span>
+          <span><i>Watchers</i></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="repo-branches-container">
+    <table class="repo-branches-table">
+      <tr>
+        <th>Branch Name</th>
+      </tr>
+      <tr *ngFor="let ref of refs" class="table-row">
+        <td>{{ref}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

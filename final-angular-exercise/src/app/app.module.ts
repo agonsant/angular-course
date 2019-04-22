@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { GithubSearchModule } from './github-search/github-search.module';
 import { NotFoundModule } from './not-found/not-found.module';
+import { RepositoryDetailModule } from './repository-detail/repository-detail.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NotFoundModule } from './not-found/not-found.module';
     HttpClientModule,
     AppRoutingModule,
     GithubSearchModule,
-    NotFoundModule
+    NotFoundModule,
+    RepositoryDetailModule
   ],
   providers: [],
   bootstrap: [AppComponent]
